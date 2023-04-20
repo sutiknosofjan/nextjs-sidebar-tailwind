@@ -27,18 +27,18 @@ export default function Home() {
 
   return (
     <div id="main" className="flex">
-      <div id="box-sidebar" className={` bg-gray-800 text-white h-screen p-5 pt-3 ${open ? "w-65" : "w-20"} duration-300 relative`}>
+      <div id="box-sidebar" className={` bg-gray-800 text-white h-screen p-5 pt-3 sm:"w-20" ${open ? "w-60" : "w-20"} duration-200 relative`}>
         <BsArrowLeftShort id="toggle-sidebar-colapse" className={`bg-gray-500 text-gray-300 text-3xl rounded-full absolute -right-3 cursor-pointer ${!open && "rotate-180"}`} onClick={() => setOpen(!open && "rotate-180")} />
 
         <div id="box-brand" className="inline-flex ">
-          <SiNextdotjs className={` bg-gray-500 text-white text-4xl rounded cursor-pointer float-left p-1 mr-3 duration-300 ${open && "rotate-[360deg]"}`} />
-          <h1 className={`text-white origin-left font-medium text-2xl duration-300 ${!open && "scale-0"}`}>
+          <SiNextdotjs className={` bg-gray-500 text-white text-4xl rounded cursor-pointer float-left p-1 mr-3 duration-200 ${open && "rotate-[360deg]"}`} />
+          <h1 className={`text-white origin-left font-medium text-2xl duration-200 ${!open && "scale-0"}`}>
             NEXTo
           </h1>
         </div>
 
         <div id="box-search" className={`flex item-center bg-gray-600 rounded-md mt-6 py-2 ${!open ? "px-3" : "px-5"}`}>
-          <BsSearch className={`text-gray-900 text-md block float-left cursor-pointer duration-300 ${open && "mt-1 mr-2"}`} />
+          <BsSearch className={`text-gray-900 text-md block float-left cursor-pointer duration-200 ${open && "mt-1 mr-2"}`} />
           <input type="text" value={_search} onChange={(e) => setSearch(e.target.value)} placeholder="Search" className={`text-base text-gray-300 bg-transparent w-full outline-none duration-200 ${!open && "hidden"}`} />
         </div>
 
@@ -59,8 +59,7 @@ export default function Home() {
               {menu.submenu && submenuOpen && open && (
                 <ul id="sidebar-submenu">
                   {menu.submenuItems.map((submenuItem, index) => (
-                    <li key={index} className="text-gray-400 text-sm flex items-center gap-x-4 
-                      cursor-pointer p-2 px-5 hover:bg-gray-700 hover:text-white rounded-md">
+                    <li key={index} className="text-gray-400 text-sm flex items-center gap-x-4 cursor-pointer p-2 px-5 hover:bg-gray-700 hover:text-white rounded-md">
                       {submenuItem.title}
                     </li>
                   ))}
