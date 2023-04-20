@@ -88,7 +88,7 @@ export default function Home() {
         </div>
 
         <div id="footer" className="bg-gray-200 text-gray-500 text-xs p-3 text-right">
-          copyright NEXTo.id &copy;2023
+          Copyright NEXTo.id &copy;2023
         </div>
 
       </div>
