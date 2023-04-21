@@ -11,17 +11,20 @@ export default function Home() {
       <div id="main-content" className="w-full h-screen">
         <Navbar />
         <div id="main-body" className="p-3 w-full mb-10">
-          <h1 className="text-2xl font-semibold">Template NEXTo</h1>
+          <h1 className="text-2xl font-semibold">Page Title</h1>
 
           <div
             id="card-content"
-            className=" shadow-md mt-5 p-3 border rounded-md"
+            className="shadow-md mt-5 p-3 border rounded-md"
           >
-            Template simple <br />
+            Simple Template
+            <br />
             <ul className="list-disc list-inside">
               <li>NextJS 13</li>
               <li>Tailwind 3</li>
               <li>Daisy UI</li>
+              <li>Sidebar (collapse, animation), Navbar, Footer</li>
+              <li>Sample Card, Table</li>
             </ul>
           </div>
 

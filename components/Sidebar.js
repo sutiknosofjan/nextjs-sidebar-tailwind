@@ -31,59 +31,59 @@ export default function Sidebar() {
     {
       title: "Home",
       icon: <AiOutlineHome />,
-      link: "https://nexto.id",
+      link: "/",
     },
     {
       title: "Pages",
       icon: <AiOutlineGroup />,
-      link: "https://nexto.id/pages",
+      link: "/pages",
     },
     {
       title: "News",
       icon: <AiOutlineNotification />,
-      link: "https://nexto.id/news",
+      link: "/news",
     },
     {
       title: "Jobs",
       icon: <AiOutlineCluster />,
-      link: "https://nexto.id/jobs",
+      link: "/jobs",
     },
     {
       title: "My Profile",
       icon: <AiOutlineUser />,
-      link: "https://nexto.id",
+      link: "/profile",
       space: true,
     },
     {
       title: "Change Password",
       icon: <AiOutlineLock />,
-      link: "https://nexto.id",
+      link: "/changepassword",
     },
     {
       title: "Change Pin",
       icon: <BsShieldLock />,
-      link: "https://nexto.id",
+      link: "/changepin",
     },
     {
       title: "Logout",
       icon: <AiOutlinePoweroff />,
-      link: "https://nexto.id/logout",
+      link: "/logout",
     },
     {
       title: "My Pages",
       icon: <AiOutlineShop />,
-      link: "https://nexto.id",
+      link: "/mypages",
       space: true,
     },
     {
       title: "My Resume",
       icon: <FaRegPaperPlane />,
-      link: "https://nexto.id",
+      link: "/myresume",
     },
     {
       title: "My Posts",
       icon: <AiOutlineForm />,
-      link: "https://nexto.id",
+      link: "/myposts",
     },
   ];
 
@@ -118,12 +118,14 @@ export default function Sidebar() {
       </div>
 
       <div id="box-user" className="flex items-center gap-x-2 p-1.5 mt-1">
-        <div className="avatar">
-          <div className="w-8 rounded-full ring ring-slate-300 ring-offset-base-100 ring-offset-2">
-            <img src="https://api.nexto.id/assets/users/648148cd7580e56113746ae6879fdf5e.jpg" />{" "}
+        <Link href="">
+          <div className="avatar">
+            <div className="w-8 rounded-full ring ring-slate-300 ring-offset-base-100 ring-offset-2">
+              <img src="https://api.nexto.id/assets/users/648148cd7580e56113746ae6879fdf5e.jpg" />{" "}
+            </div>
           </div>
-        </div>
-        <div className={!open && "hidden"}>Sutikno</div>
+          <div className={!open && "hidden"}>Sutikno</div>
+        </Link>
       </div>
 
       <ul id="sidebar-menu1" className="mt-6">

@@ -89,15 +89,21 @@ export default function Navbar() {
       </div>
 
       <div className="float-right">
-        <div className="flex ml-1 hover:bg-gray-100 rounded-lg p-1 py-2">
+        <Link
+          href=""
+          className="flex ml-1 hover:bg-gray-100 rounded-lg p-1 py-2"
+        >
           <AiOutlineMail className="text-lg" />
-          <span className="text-xs text-red-800 font-bold -mt-1">10</span>
-        </div>
+          <span className="text-xs text-red-500 font-bold -mt-1">10</span>
+        </Link>
 
-        <div className="flex ml-1 hover:bg-gray-100 rounded-lg p-1 py-2">
+        <Link
+          href=""
+          className="flex ml-1 hover:bg-gray-100 rounded-lg p-1 py-2"
+        >
           <AiOutlineBell className="text-lg" />
-          <span className="text-xs text-red-800 font-bold -mt-1">25</span>
-        </div>
+          <span className="text-xs text-red-500 font-bold -mt-1">25</span>
+        </Link>
       </div>
     </div>
   );
